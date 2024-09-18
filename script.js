@@ -7,7 +7,7 @@ let taskPending=[];
 
 
 
-let setPriority='';
+let setPriority="black";
 
 rating.addEventListener("click", function(e){
     if(e.target.classList.contains("important")){
@@ -35,13 +35,17 @@ function addTask(){
             li.style.color="yellow";
         }else if(setPriority==="soft"){
             li.style.color="green"
-        }       
+        }else{
+            li.style.color="black"
+        } 
   
         let span=document.createElement("span");
         span.innerHTML="\u00d7"; // Caractere de "x" para remover
         li.appendChild(span);
         listContainer.appendChild(li); /*Inseri novo elemento ao HTMl */
         taskPending.push(inputBox.value);
+
+        setPriority=" "; // para garantir que não vai manter as cores selecionadas anteriormente.
     }
 
     
