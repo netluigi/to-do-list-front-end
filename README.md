@@ -12,6 +12,8 @@ Tecnologias Usadas
 HTML
 CSS
 JavaScript
+ChatGpt
+
 Estrutura do Projeto
 HTML
 O HTML fornece a estrutura básica da aplicação, incluindo um campo de entrada para novas tarefas, botões de prioridade, um botão para adicionar tarefas e uma área para filtrar e exibir tarefas.
@@ -25,7 +27,7 @@ O JavaScript é utilizado para:
 Gerenciar o estado das tarefas.
 Manipular o DOM para adicionar, remover e atualizar tarefas.
 Salvar e recuperar tarefas do localStorage.
-Filtrar tarefas com base no seu status.
+Filtrar tarefas com base no seu status.(pendente)
 Como Usar
 Adicionar uma Tarefa:
 
