@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding:10px;   
+}
+
+.container-App{
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto  20px;
+    padding: 40px 30px 70px;
+    box-shadow: 0px 0px 0px 2px black;
+    background: rgba(246, 223, 165, 0.937);
+}
+
+.container-App h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 0px 0px black;
+}
+
+.container-App h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    gap: 10px;
+    background: rgb(230, 228, 228);
+    border-radius: 30px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+
+.row input{
+    flex: 1; 
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.filter{display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    padding-left: 30px;
+}
+
+.filter button{
+    padding: 2px 15px;
+    font-size: 10px;   
+}
+
+.filter button.taskDone{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(116, 248, 86);
+    cursor: pointer;
+    color:rgb(47, 103, 35) ;
+}
+
+.filter button.taskPending{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(248, 86, 86);
+    cursor: pointer; 
+    color: rgb(156, 22, 22);  
+}
+
+.filter button:hover{
+    color: black;
+}
+
+
+
+.rating{
+    display: flex;
+    gap: 5px; 
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating button{  
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;  
+    padding: 8px;  
+    margin: 5px;
+}
+
+.rating .important{
+    background: rgb(249, 12, 12);
+}
+.rating .average{
+    background: rgb(248, 248, 16);
+}
+.rating .soft{
+    background: rgb(10, 230, 10);
+}
+
+.row .confirm{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 50px;
+    background: #ff5945;
+    border-radius: 30px;
+    color:#fff;
+}
+
+ul li{
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    padding: 16px 8px 12px 50px;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-image: url(img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left:8px ;
+}
+
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+    
+}
+
+ul li.checked::before{
+    background-image: url(img/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
+@media (max-width:600px) {
+    .row{
+        flex-direction: column; /*coloca os itens em coluna*/
+        align-items: stretch; /*para ocuparem a largura total*/
+        gap: 0;
+    }
+    .rating{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .rating button{
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50%;
+        align-items: center;
+        cursor: pointer;  
+        padding: 8px;  
+        margin: 5px;   
+        
+    }
+
+    .confirm{
+        width: 90%;
+        padding: none;
+        margin-bottom: 10px;
+    }
+}
+

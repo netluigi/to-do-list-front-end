@@ -1,0 +1,40 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-list-front-end</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-App">
+            <h2>To Do List <img src="img/icon.png"></h2>
+            <div class="row">
+                <input type="text" id="inputBox" placeholder="New Task">
+                <div class="rating">
+                    <button class="important"></button>
+                    <button class="average"></button>
+                    <button class="soft"></button>
+                </div>
+                <button class="confirm" onclick="addTask()">Add</button>
+            </div>
+
+            <div class="filter">
+                <button class="taskDone">Success</button>
+                <button class="taskPending">Pending</button>
+            </div>
+        
+            <div>
+                <ul class="list-container">
+                    <!-- <li class="checked">Conteudo</li>
+                    <li>Conteudo</li>
+                    <li>Conteudo</li> -->
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
