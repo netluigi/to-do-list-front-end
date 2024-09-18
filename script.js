@@ -16,7 +16,9 @@ rating.addEventListener("click", function(e){
         setPriority="average";
     }else if(e.target.classList.contains("soft")){
         setPriority="soft"
-    }
+    }else{
+        li.style.color="black"
+    }; 
 
 })
 
@@ -35,9 +37,7 @@ function addTask(){
             li.style.color="yellow";
         }else if(setPriority==="soft"){
             li.style.color="green"
-        }else{
-            li.style.color="black"
-        } 
+        }
   
         let span=document.createElement("span");
         span.innerHTML="\u00d7"; // Caractere de "x" para remover
